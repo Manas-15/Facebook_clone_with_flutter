@@ -1,11 +1,28 @@
 import 'package:flutter/material.dart';
-import 'package:project/app_screens/home.dart';
+import 'package:project/app_screens/pratice.dart';
+import 'package:project/widgets/maintab.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  // const MyApp({key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Facebook Lite',
+      theme: ThemeData(
+        primaryColor: Colors.white,
+      ),
+      debugShowCheckedModeBanner: false,
+      home: MainTab(),
+    );
+  }
+}
+
+class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,7 +32,7 @@ class MyApp extends StatelessWidget {
                   title: Text('My flutter App'),
                 ),
                 backgroundColor: Colors.cyan,
-                body: HomeScreen()
+                body: MainTab()
 
                 // Stack(
                 //   children: [
