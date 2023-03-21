@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:project/widgets/home/postbar.dart';
 
 import '../widgets/home/menubar.dart';
+import '../widgets/home/post.dart';
 import '../widgets/home/storybar.dart';
 
 class HomePage extends StatefulWidget {
@@ -33,6 +34,7 @@ class _HomePageState extends State<HomePage> {
               thickness: 1,
               color: Colors.black12,
             ),
+            Post(),
           ],
         ));
   }
