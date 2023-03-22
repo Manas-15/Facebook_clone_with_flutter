@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Menubar extends StatelessWidget {
-  const Menubar({Key? key}) : super(key: key);
+class HomePageMenubar extends StatelessWidget {
+  const HomePageMenubar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class Menubar extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         TextButton(
-          onPressed: () => print("Menubar clicked"),
+          onPressed: () => print("HomePageMenubar clicked"),
           child: Row(
             children: [
               Icon(Icons.post_add_outlined),
