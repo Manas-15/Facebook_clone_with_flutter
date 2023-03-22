@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project/widgets/home/postbar.dart';
-
-import '../widgets/home/menubar.dart';
+import '../widgets/home/homepagemenubar.dart';
 import '../widgets/home/post.dart';
 import '../widgets/home/storybar.dart';
 
@@ -24,7 +23,7 @@ class _HomePageState extends State<HomePage> {
               thickness: 1,
               color: Colors.black12,
             ),
-            Menubar(),
+            HomePageMenubar(),
             Divider(
               thickness: 1,
               color: Colors.black12,
