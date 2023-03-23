@@ -1,6 +1,6 @@
 # project
 
-A new Flutter project.
+This is my Flutter learning Facebook_Clone project
 
 ## Getting Started
 
@@ -14,3 +14,8 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+ Following are the Facebook Clone screenshots for reference
+ 
+ ![Screenshot from 2023-03-23 16-50-00](https://user-images.githubusercontent.com/63544413/227189664-236747ef-e82e-4928-9b20-dff1c62ff1dd.png)
+
