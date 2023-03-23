@@ -21,29 +21,29 @@ class _MainTabState extends State<MainTab> with SingleTickerProviderStateMixin {
   TabController? _tabController;
 
   final List<Tab> topTabs = <Tab>[
-    Tab(
+    const Tab(
       icon: Icon(Icons.home_outlined),
     ),
-    Tab(
+    const Tab(
       icon: Icon(Icons.people_outlined),
     ),
-    Tab(
+    const Tab(
       icon: Icon(Icons.message_outlined),
     ),
     Tab(
       icon: badges.Badge(
         position: badges.BadgePosition.topEnd(top: -20, end: -5),
-        badgeContent: Text(
+        badgeContent: const Text(
           '5',
           style: TextStyle(fontSize: 18, color: Colors.white),
         ),
-        child: Icon(Icons.notifications_outlined),
+        child: const Icon(Icons.notifications_outlined),
       ),
     ),
-    Tab(
+    const Tab(
       icon: Icon(Icons.video_library_outlined),
     ),
-    Tab(
+    const Tab(
       icon: Icon(Icons.shopping_bag_outlined),
     ),
   ];
@@ -91,8 +91,10 @@ class _MainTabState extends State<MainTab> with SingleTickerProviderStateMixin {
           ),
           actions: [
             Container(
+              decoration: BoxDecoration(
+                  shape: BoxShape.circle, color: Colors.grey[300]),
               child: IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.search,
                   color: Colors.black,
                 ),
@@ -102,13 +104,13 @@ class _MainTabState extends State<MainTab> with SingleTickerProviderStateMixin {
                   print('Search Button Clicked');
                 },
               ),
-              decoration: BoxDecoration(
-                  shape: BoxShape.circle, color: Colors.grey[300]),
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 10.0),
+              margin: const EdgeInsets.symmetric(horizontal: 10.0),
+              decoration: BoxDecoration(
+                  shape: BoxShape.circle, color: Colors.grey[300]),
               child: IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.menu,
                   color: Colors.black,
                 ),
@@ -116,8 +118,6 @@ class _MainTabState extends State<MainTab> with SingleTickerProviderStateMixin {
                 highlightColor: Colors.transparent,
                 onPressed: () => _scaffoldKey.currentState!.openEndDrawer(),
               ),
-              decoration: BoxDecoration(
-                  shape: BoxShape.circle, color: Colors.grey[300]),
             ),
           ],
           bottom: TabBar(

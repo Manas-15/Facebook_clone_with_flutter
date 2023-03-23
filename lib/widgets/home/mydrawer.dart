@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../pages/friend_page.dart';
 import '../../pages/message_page.dart';
 import '../../pages/notifications_page.dart';
+import '../../pages/profile_page.dart';
 
 class MyDrawer extends StatelessWidget {
   const MyDrawer({Key? key}) : super(key: key);
@@ -47,15 +48,18 @@ class MyDrawer extends StatelessWidget {
             padding: EdgeInsets.zero,
             children: [
               ListTile(
-                leading: CircleAvatar(
+                leading: const CircleAvatar(
                   backgroundImage: AssetImage('images/user.png'),
                 ),
-                title: Text(
+                title: const Text(
                   "Manas Pasayat",
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
                 subtitle: Text('View Your Profile'),
-                onTap: () => {print('view your profile')},
+                onTap: () => {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => ProfilePage()))
+                },
               ),
               const Divider(
                 thickness: 1,

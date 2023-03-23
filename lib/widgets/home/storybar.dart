@@ -7,7 +7,7 @@ class Storybar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(10.0),
+      margin: const EdgeInsets.all(10.0),
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Wrap(
@@ -29,8 +29,8 @@ class Storybar extends StatelessWidget {
                         Container(
                           height: 170,
                           width: 150,
-                          margin: EdgeInsets.only(bottom: 30.0),
-                          child: ClipRRect(
+                          margin: const EdgeInsets.only(bottom: 30.0),
+                          child: const ClipRRect(
                               borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(20),
                                   topRight: Radius.circular(20)),
@@ -40,7 +40,7 @@ class Storybar extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () => {},
-                          child: Text(
+                          child: const Text(
                             'Add to story',
                             style: TextStyle(
                                 fontSize: 20.0,
