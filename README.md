@@ -1,4 +1,4 @@
-# project
+# facebook lite
 
 This is my Flutter learning Facebook_Clone project
 
